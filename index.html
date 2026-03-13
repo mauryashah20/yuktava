@@ -38,6 +38,14 @@
                 <h1 class="large-heading">Maurya Shah</h1>
                 <h2 class="role-subtitle">&gt; Embedded Systems & Autonomous Platforms Engineer_</h2>
                 <p class="hero-description">I build low-latency control systems, edge AI applications, and full-stack drone platforms integrating embedded hardware, mobile apps, and real-time networking.</p>
+                <div class="hero-tech-strip fade-in delay-1">
+                    <span class="tech-badge">ESP32</span>
+                    <span class="tech-badge">Embedded Systems</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Computer Vision</span>
+                    <span class="tech-badge">Networking</span>
+                    <span class="tech-badge">Drone Systems</span>
+                </div>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <span>View Projects</span>
@@ -79,13 +87,15 @@
                     <div class="featured-visual">
                         <div class="featured-arch">
                             <div class="arch-header">System Architecture</div>
-                            <ul>
-                                <li>Android transmitter captures video + GPS</li>
-                                <li>Video streamed over UDP to Python Ground Control Station</li>
-                                <li>Joystick commands sent back over network</li>
-                                <li>Commands forwarded via Bluetooth to ESP32</li>
-                                <li>ESP32 converts signals to PWM for servos</li>
-                            </ul>
+                            <pre class="arch-code"><code>Android Phone
+   ↓ UDP Video
+Python Ground Control Station
+   ↓ Control Commands
+Bluetooth Communication
+   ↓
+ESP32 Receiver
+   ↓ PWM Signals
+Drone Servos / Hardware</code></pre>
                         </div>
                     </div>
                 </div>
