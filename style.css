@@ -369,6 +369,17 @@ a:hover {
     border-color: rgba(220, 220, 220, 0.2);
 }
 
+/* Leadership section specific mobile overrides */
+@media (max-width: 768px) {
+    #leadership .team-grid {
+        gap: 1.2rem;
+    }
+    
+    #leadership .team-card {
+        padding: 1.4rem;
+    }
+}
+
 .team-info h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
